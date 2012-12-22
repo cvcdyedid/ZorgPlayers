@@ -5,7 +5,7 @@
 ;	-from the group's stack, which is the code from "stjmp" to "enjmp".
 ;	-the idea is that we don't need to use any counters.
 ;	-The "length loop", the "Jumping length", the static or "random" position - all have great influence on the behaviour and points.
-;   -We multipled the code for 0x87 attck. the rael code is int the middle.
+;   -We multipled the code, in order to prevent a int 0x87 attack. the rael code is int the middle.
 %define JumpingLength 0xbd4 * 0x2 ;jump far
 %define LoopsLength 0x3f3;(0xfc * 0x4) + 0x3 ;Length loop
 jmp RealStart
